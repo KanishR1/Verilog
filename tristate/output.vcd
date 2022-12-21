@@ -1,0 +1,42 @@
+$date
+	Wed Dec 21 18:54:10 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_tristate $end
+$var wire 4 ! data_out [3:0] $end
+$var reg 4 " data_in [3:0] $end
+$var reg 1 # en $end
+$scope module DUT $end
+$var wire 4 $ data_in [3:0] $end
+$var wire 1 # en $end
+$var reg 4 % data_out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bz %
+b101 $
+0#
+b101 "
+bz !
+$end
+#10
+b101 !
+b101 %
+1#
+#20
+b111 !
+b111 %
+b111 "
+b111 $
+#30
+bz !
+bz %
+0#
+#40
