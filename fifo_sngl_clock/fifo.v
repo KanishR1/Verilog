@@ -1,7 +1,7 @@
 module fifo (
     input rst,clk,wr_en,rd_en, input [7:0] buf_in, output reg buf_empty,buf_full, output reg [7:0] buf_out, fifo_counter
 );
-    reg [4:0] rd_ptr, wr_ptr; //Read abnd write pointer like head and tail
+    reg [5:0] rd_ptr, wr_ptr; //Read abnd write pointer like head and tail
     reg [7:0] buf_mem [63:0]; // RAM
 
     always @(fifo_counter) begin
